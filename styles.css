@@ -1,15 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 body {
-  background-color: #14213d;
+  /* background-color: #14213d; */
   font-family:"Cabin", sans-serif;
-  color: pink;
+  color: #212121;
   }
 
-  h1 {
-    font-size: 60px;
+.navbar-brand {
+  color: pink;
+}
+
+.nav-link {
+  color: azure;
+}
+
+.active {
+  color: pink;
+}
+
+button{
+  background-color: transparent;
+  padding: 2px 6px;
+  margin: 0 3px;
+  border: solid 2px #b3e59f;
+  color: #b3e59f;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+
+.hero-container {
+  background-color: #14213d;
+  position: relative;
+  color: pink;
+}
+
+.left-side {
+  width: 70%;
+}
+
+.right-side {
+  width: 30%;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-pic {
+  position: relative;
+  z-index: 1;
+}
+
+.pink-outer {
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  left: 20px;
+  width: 300px;
+  height: 274.96px;
+  border: solid 1px pink;
+  border-radius: 8px;
+}
+
+.blue-outer {
+  position: absolute;
+  z-index: 0;
+  top: -40px;
+  left: 40px;
+  width: 300px;
+  height: 274.96px;
+  border: solid 1px rgb(91, 166, 196);
+  border-radius: 8px;
+}
+
+.green-outer {
+  position: absolute;
+  z-index: 0;
+  top: -60px;
+  left: 60px;
+  width: 300px;
+  height: 274.96px;
+  border: solid 1px #b3e59f;
+  border-radius: 8px;
+}
+
+.contact-icon {
+  font-size: 40px;
+  margin: 8px;
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  text-align: left;
+  display: grid;
+  place-items: center;
+}
+
+.typing-effect {
+  width: 20ch;
+  animation: typing 3s steps(20), blink .5s step-end infinite alternate;
+  /* pause 7.5s steps(1) inifinite; */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    wifth: 20ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.container-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* @keyframes pause {
+  0%, 22% { border-right: 3px solid; }
+  100% { border-right: 3px solid; }
+} */
+
+.arrow-icon {
+  color: pink;
+  font-size: 40px;
+  position: absolute;
+  bottom: 20%;
+}
+
+.arrow-icon:hover {
+  bottom: 18%;
+  transition: 0.3s;
+}
+
+.description {
+  width: 50%;
+  padding: 0;
+}
+
+.project-icon {
+  padding-left: 6px;
+}
+
+  .name {
+    font-size: 80px;
   }
 
 li {
   list-style-type: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #14213d;
+  color: pink;
 }
