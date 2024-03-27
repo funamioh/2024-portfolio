@@ -6,6 +6,10 @@ body {
   color: #212121;
   }
 
+.navbar {
+  background-color: #323743;
+}
+
 .navbar-brand {
   color: pink;
 }
@@ -27,6 +31,21 @@ button{
   cursor: pointer;
   outline: none;
   appearance: none;
+}
+
+.project-btn {
+  text-decoration: none;
+  border: solid 2px #b3e59f;
+  color: #b3e59f;
+  padding: 2px 6px;
+}
+
+.project-btn:hover {
+  transition: 0.3s;
+  background: #b3e59f;
+  border: solid 2px #b3e59f;
+  color: white;
+  padding: 2px 6px;
 }
 
 .hero-container {
@@ -86,6 +105,7 @@ button{
 }
 
 .contact-icon {
+  color: #606060;
   font-size: 40px;
   margin: 8px;
 }
@@ -145,7 +165,7 @@ button{
 }
 
 .description {
-  width: 50%;
+  width: 70%;
   padding: 0;
 }
 

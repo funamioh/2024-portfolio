@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/c8ce4fa207.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/images/skateboard_green.png" alt="top-icon" width="25px"></a>
@@ -67,7 +67,7 @@
   <img src="./assets/images/project-manager.png" alt="project-management" width="250px">
 <div class="about d-flex flex-column justify-content-center align-items-center my-5">
   <h1>About</h1>
-  <p class="mx-3">I am a former project coordinator who who transitioned to becoming a fullstack developer. After refining my skills at a software company, I took a leap to pursue intensive fullstack development training at Le Wagon Tokyo, a 6-month-long coding bootcamp.
+  <p class="mx-5">I am a former project coordinator who who transitioned to becoming a fullstack developer. After refining my skills at a software company, I took a leap to pursue intensive fullstack development training at Le Wagon Tokyo, a 6-month-long coding bootcamp.
   </p>
 </div>
 </div>
@@ -86,13 +86,20 @@
   <h1>Projects</h1>
 <div class="kanji-cam d-flex my-5">
   <!-- make it carousel and show off some of other pages! -->
+  <!-- box-shadowつける -->
   <img src="./assets/images/kanji-cam/kanji_cam_ui.png" alt="kanji-cam-img" width="400px" style="border-radius: 8px;">
   <div class="d-flex justify-content-center align-items-center">
     <div class="description">
   <h2>Kanji Cam</h2>
+  <!-- CVの説明は短いので、もうちょっとゲーム要素が入ってて楽しいよ！っていうのを入れたい。 -->
   <p>A web application that recognizes kanji in images, designed to aid learners of Japanese in preparing for the JLPT.</p>
-  <li>Demo<a href="https://kanji-cam-miho-2cba8719681c.herokuapp.com/"><i class="fas fa-arrow-up-right-from-square project-icon"></i></a></li>
-  <li>Source Code<a href="https://github.com/funamioh/kanji_cam"><i class="fas fa-code project-icon"></i></a></li>
+  <div class="tech-stack-container my-3">
+  <p>Tech Stack:</p>
+  <!-- フロントエンドはーバックエンドはーDBはーというように分けて書いても良いかもしれない。 -->
+  <p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, Mapbox API, Tesseractjs, PostgreSQL, Heroku, Git</p>
+</div>
+  <a class="project-btn" href="https://kanji-cam-miho-2cba8719681c.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
+<a class="project-btn" href="https://github.com/funamioh/kanji_cam" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
 </div>
 </div>
 
@@ -101,11 +108,18 @@
   <div class="d-flex justify-content-center align-items-center">
     <div class="description">
 <h2>Caravana</h2>
+<!-- こちらも説明が短いので、もう少し加える -->
 <p>A marketplace app connects recreational vehicle providers with customers.</p>
-<li>Demo<a href="https://caravana-miho-328b8c5c8cfd.herokuapp.com/"><i class="fas fa-arrow-up-right-from-square project-icon"></i></a></li>
-  <li>Source Code<a href="https://github.com/funamioh/caravan-market"><i class="fas fa-code project-icon"></i></a></li>
+<div class="tech-stack-container my-3">
+<p>Tech Stack:</p>
+<!-- フロントエンドはーバックエンドはーDBはーというように分けて書いても良いかもしれない。 -->
+<p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, PostgreSQL, Cloudinary, Heroku, Git</p>
+</div>
+<a class="project-btn" href="https://caravana-miho-328b8c5c8cfd.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
+<a class="project-btn" href="https://github.com/funamioh/caravan-market" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
 </div>
         </div>
+        <!-- box-shadowつける -->
         <img src="./assets/images/caravana/caravana-ui.png" alt="caravana-ui" width="400px" style="border-radius: 8px;" >
     </div>
 
@@ -120,7 +134,7 @@
 <a class="footer contact-icon" href="https://www.linkedin.com/in/miho-funayama-653b391b4/" target="_blank" re="noopener noreferrer"><i class="fab fa-linkedin"></i></li></a>
 <a class="footer contact-icon" href="https://github.com/funamioh" target="_blank" re="noopener noreferrer"><li><i class="fab fa-github"></i></li></a>
 </div>
-<p class="text-center p-2">This project is coded by Miho and open-sourced on GitHub</p>
+<p class="text-center p-2">© 2024 Miho Funayama</p>
 </div>
   </div>
 </body>
