@@ -8,6 +8,7 @@ body {
 
 .navbar {
   background-color: #323743;
+  font-size: 20px;
 }
 
 .navbar-brand {
@@ -15,22 +16,29 @@ body {
 }
 
 .nav-link {
-  color: azure;
+  color: #606060;
 }
 
-.active {
-  color: pink;
+.nav-link.active {
+  color: pink !important;
 }
 
-button{
+.cv-btn {
   background-color: transparent;
-  padding: 2px 6px;
+  padding: 0 6px;
   margin: 0 3px;
+  font-size: 16px;
   border: solid 2px #b3e59f;
   color: #b3e59f;
   cursor: pointer;
   outline: none;
   appearance: none;
+}
+
+.cv-btn:hover {
+  transition: 0.3s;
+  background: #b3e59f;
+  color: #323743;
 }
 
 .project-btn {
@@ -43,9 +51,7 @@ button{
 .project-btn:hover {
   transition: 0.3s;
   background: #b3e59f;
-  border: solid 2px #b3e59f;
   color: white;
-  padding: 2px 6px;
 }
 
 .hero-container {
