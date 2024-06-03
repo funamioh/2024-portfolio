@@ -30,14 +30,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <button class="cv-btn">Download CV</button>
+          <button class="cv-btn"><a class="cv-link" href="./assets/cv/Miho-Funayama-resume.pdf" download="cv">Download CV</a></button>
         </ul>
       </div>
     </div>
   </nav>
   <div id="home" class="hero-container d-flex justify-content-center align-items-center vh-100">
     <!-- <div class="hero-container d-flex justify-content-center align-items-center vh-100"> -->
-    <div class="d-flex justify-content-center align-items-center flex-sm-column flex-lg-row">
+    <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row">
     <div class="left-side d-flex flex-column align-items-start">
 <h1 class="name">Miho Funayama</h1>
 <div class="wrapper">
@@ -63,7 +63,7 @@
 <div class="arrow-icon"><i class="fas fa-arrow-down"><a ref="#about" ></a></i></div>
 </div>
 <div class="container-width">
-  <div class="d-flex align-items-center flex-sm-column flex-lg-row">
+  <div class="d-flex align-items-center flex-column flex-lg-row">
   <img src="./assets/images/project-manager.png" alt="project-management" width="250px">
 <div id="about" class="about d-flex flex-column justify-content-center align-items-center my-5">
   <h1>About</h1>
@@ -84,18 +84,16 @@
 </div>
 <div id="projects" class="projects d-flex flex-column justify-content-center align-items-center">
   <h1>Projects</h1>
-<div class="kanji-cam d-flex my-5 flex-sm-column flex-lg-row">
-  <!-- make it carousel and show off some of other pages! -->
-  <!-- box-shadowつける -->
-  <img src="./assets/images/kanji-cam/kanji_cam_ui.png" alt="kanji-cam-img" width="400px" style="border-radius: 8px;">
+<div class="kanji-cam d-flex my-5 flex-column flex-sm-column flex-lg-row">
   <div class="d-flex justify-content-center align-items-center">
-    <div class="description">
+  <img src="./assets/images/kanji-cam/kanji_cam_ui.png" alt="kanji-cam-img" width="400px" style="border-radius: 8px;">
+</div>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="description my-4">
   <h2>Kanji Cam</h2>
-  <!-- CVの説明は短いので、もうちょっとゲーム要素が入ってて楽しいよ！っていうのを入れたい。 -->
   <p>A web application that recognizes kanji in images, designed to aid learners of Japanese in preparing for the JLPT.</p>
   <div class="tech-stack-container my-3">
   <p>Tech Stack:</p>
-  <!-- フロントエンドはーバックエンドはーDBはーというように分けて書いても良いかもしれない。 -->
   <p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, Mapbox API, Tesseractjs, PostgreSQL, Heroku, Git</p>
 </div>
   <a class="project-btn" href="https://kanji-cam-miho-2cba8719681c.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
@@ -104,23 +102,22 @@
 </div>
 
 </div>
-<div class="caravana d-flex my-5 flex-sm-column-reverse flex-lg-row">
+<div class="caravana d-flex my-5 flex-column-reverse flex-sm-column-reverse flex-lg-row">
   <div class="d-flex justify-content-center align-items-center">
-    <div class="description">
+    <div class="description my-4">
 <h2>Caravana</h2>
-<!-- こちらも説明が短いので、もう少し加える -->
 <p>A marketplace app connects recreational vehicle providers with customers.</p>
 <div class="tech-stack-container my-3">
 <p>Tech Stack:</p>
-<!-- フロントエンドはーバックエンドはーDBはーというように分けて書いても良いかもしれない。 -->
 <p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, PostgreSQL, Cloudinary, Heroku, Git</p>
 </div>
 <a class="project-btn" href="https://caravana-miho-328b8c5c8cfd.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
 <a class="project-btn" href="https://github.com/funamioh/caravan-market" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
 </div>
         </div>
-        <!-- box-shadowつける -->
+        <div class="d-flex justify-content-center align-items-center">
         <img src="./assets/images/caravana/caravana-ui.png" alt="caravana-ui" width="400px" style="border-radius: 8px;" >
+      </div>
     </div>
 
 </div>

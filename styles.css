@@ -4,6 +4,7 @@ body {
   /* background-color: #14213d; */
   font-family:"Cabin", sans-serif;
   color: #212121;
+  overflow-x: hidden;
   }
 
 .navbar {
@@ -39,6 +40,15 @@ body {
   transition: 0.3s;
   background: #b3e59f;
   color: #323743;
+  .cv-link {
+    text-decoration: none;
+    color: #323743;
+  }
+}
+
+.cv-link {
+  text-decoration: none;
+  color: #b3e59f;
 }
 
 .project-btn {
@@ -194,4 +204,14 @@ p {
 .footer {
   background-color: #14213d;
   color: pink;
+}
+
+@media (max-width:576px) {
+.name {
+  font-size: 50px;
+}
+
+  h1 {
+    font-size: 24px;
+  }
 }
