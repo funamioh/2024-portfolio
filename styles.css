@@ -5,6 +5,7 @@ body {
   font-family:"Cabin", sans-serif;
   color: #212121;
   overflow-x: hidden;
+  background-color: #F4F4F4;
   }
 
 .navbar {
@@ -25,30 +26,47 @@ body {
 }
 
 .cv-btn {
-  background-color: transparent;
-  padding: 0 6px;
+  /* width: 200px; */
+  padding: 0 14px;
   margin: 0 3px;
   font-size: 16px;
-  border: solid 2px #b3e59f;
-  color: #b3e59f;
+  font-weight: 600;
   cursor: pointer;
-  outline: none;
-  appearance: none;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #f5ce62, #00997B, #4bbdff, #3ae169);
+  border-radius: 30px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .cv-btn:hover {
-  transition: 0.3s;
-  background: #b3e59f;
-  color: #323743;
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   .cv-link {
     text-decoration: none;
     color: #323743;
   }
 }
 
+.cv-btn:focus {
+  outline: none;
+}
+
 .cv-link {
   text-decoration: none;
-  color: #b3e59f;
+  color: #323743;
+}
+
+.project-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
 }
 
 .project-btn {
@@ -145,6 +163,16 @@ body {
   font-family: monospace;
 }
 
+.devicon-netlify-plain {
+  font-size: 36px;
+  color: #323743;
+}
+
+.devicons {
+  font-size: 36px;
+  color: #323743;
+}
+
 @keyframes typing {
   from {
     width: 0
@@ -189,6 +217,7 @@ body {
 
 .prj-img {
   width: 400px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .project-icon {
