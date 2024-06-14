@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="./styles.css">
   <title>Portfolio</title>
   <script src="https://kit.fontawesome.com/c8ce4fa207.js" crossorigin="anonymous"></script>
@@ -51,7 +53,7 @@
 </div>
 <div class="right-side">
   <div class="profile-container">
-  <img class="profile-pic" src="./assets/images/miho-profile.JPEG" alt="profile-pic" style="border-radius: 8px;">
+  <img class="profile-pic" src="./assets/images/miho-profile.JPEG" alt="profile-pic" style="border-radius: 4px;">
   <div class="pink-outer"></div>
   <div class="blue-outer"></div>
   <div class="green-outer"></div>
@@ -66,7 +68,9 @@
   <img src="./assets/images/project-manager.png" alt="project-management" width="250px">
 <div id="about" class="about d-flex flex-column justify-content-center align-items-center my-5">
   <h1>About</h1>
-  <p class="mx-0 mx-sm-5">I am a former project coordinator who who transitioned to becoming a fullstack developer. After refining my skills at a software company, I took a leap to pursue intensive fullstack development training at Le Wagon Tokyo, a 6-month-long coding bootcamp.
+  <p class="mx-0 mb-4 mx-sm-5">I am a former project coordinator who transitioned to becoming a fullstack developer. After refining my skills at a software company, I took a leap to pursue intensive fullstack development training at Le Wagon Tokyo, a 6-month-long coding bootcamp.
+  </p>
+  <p class="mx-0 mb-4 mx-sm-5">Currently, I'm seeking Backend Engineer roles to apply my innovation and technical skills to new challenges.
   </p>
 </div>
 </div>
@@ -75,25 +79,38 @@
 <ul class="d-flex">
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/html.png" alt="html-icon" width="45px"><p>HTML</p></li></div>
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/css-3.png" alt="css-icon" width="45px"><p>CSS</p></li></div>
+  <div class="skill text-center mx-2"><li><img src="./assets/images/skills/html.png" alt="html-icon" width="45px"><p>Bootstrap</p></li></div>
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/git.png" alt="git-icon" width="45px"><p>Git</p></li></div>
+  <div class="skill text-center mx-2"><li><img src="./assets/images/skills/ruby-on-rails.png" alt="git-icon" width="45px"><p>Ruby</p></li></div>
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/ruby-on-rails.png" alt="git-icon" width="45px"><p>Rails</p></li></div>
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/sql.png" alt="git-icon" width="45px"><p>SQL</p></li></div>
   <div class="skill text-center mx-2"><li><img src="./assets/images/skills/js.png" alt="js-icon" width="45px"><p>JavaScript</p></li></div>
+  <div class="skill text-center mx-2"><li><img src="./assets/images/skills/js.png" alt="js-icon" width="45px"><p>Node.js</p></li></div>
 </ul>
 </div>
 <div id="projects" class="projects d-flex flex-column justify-content-center align-items-center">
   <h1>Projects</h1>
-<div class="kanji-cam d-flex my-5 flex-column flex-sm-column flex-lg-row">
+<div class="kanji-cam project-card d-flex py-3 my-3 flex-column flex-sm-column flex-lg-row">
   <div class="d-flex justify-content-center align-items-center">
-  <img src="./assets/images/kanji-cam/kanji_cam_ui.png" class="prj-img" alt="kanji-cam-img" style="border-radius: 8px;">
+  <img src="./assets/images/kanji-cam/kanji_cam_ui.png" class="prj-img" alt="kanji-cam-img" style="border-radius: 4px;">
 </div>
   <div class="d-flex justify-content-center align-items-center">
     <div class="description my-4">
   <h2>Kanji Cam</h2>
-  <p class="mx-0 mx-sm-5">A web application that recognizes kanji in images, designed to aid learners of Japanese in preparing for the JLPT.</p>
+  <p>A web application that recognizes kanji in images, designed to aid learners of Japanese in preparing for the JLPT.</p>
+  <hr>
   <div class="tech-stack-container my-3">
   <p>Tech Stack:</p>
-  <p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, Mapbox API, Tesseractjs, PostgreSQL, Heroku, Git</p>
+  <span class="devicons devicons-ruby_rough"></span>
+  <span class="devicons devicons-ruby_on_rails"></span>
+  <span class="devicons devicons-html5"></span>
+  <span class="devicons devicons-css3"></span>
+  <span class="devicons devicons-bootstrap"></span>
+  <span class="devicons devicons-javascript_badge"></span>
+  <span class="devicons devicons-postgresql"></span>
+  <span class="devicons devicons-heroku"></span>
+  <span class="devicons devicons-github_alt"></span>
+  <p>Stimulus.js, Mapbox API, Tesseractjs</p>
 </div>
   <a class="project-btn" href="https://kanji-cam-miho-2cba8719681c.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
 <a class="project-btn" href="https://github.com/funamioh/kanji_cam" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
@@ -101,22 +118,55 @@
 </div>
 
 </div>
-<div class="caravana d-flex my-5 flex-column-reverse flex-sm-column-reverse flex-lg-row">
-  <div class="d-flex justify-content-center align-items-center">
-    <div class="description my-4">
-<h2>Caravana</h2>
-<p class="mx-0 mx-sm-5">A marketplace app connects recreational vehicle providers with customers.</p>
-<div class="tech-stack-container my-3">
-<p>Tech Stack:</p>
-<p>Ruby, Ruby on Rails, HTML, CSS, Bootstrap, JavaScript, Stimulus.js, PostgreSQL, Cloudinary, Heroku, Git</p>
-</div>
-<a class="project-btn" href="https://caravana-miho-328b8c5c8cfd.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
-<a class="project-btn" href="https://github.com/funamioh/caravan-market" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
-</div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-        <img src="./assets/images/caravana/caravana-ui.png" class="prj-img" alt="caravana-ui" style="border-radius: 8px;" >
-      </div>
+
+    <div class="caravana project-card d-flex py-3 my-3 flex-column flex-sm-column flex-lg-row">
+      <div class="d-flex justify-content-center align-items-center">
+      <img src="./assets/images/caravana/caravana-ui.png" class="prj-img" alt="caravan-img" style="border-radius: 4px;">
+    </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="description my-4">
+          <h2>Caravana</h2>
+          <p>A marketplace app connects recreational vehicle providers with customers. Both providers and customers can check booking status on booking dashbaord. Providers can accept or decline booking request. </p>
+      <hr>
+      <div class="tech-stack-container my-3">
+      <p>Tech Stack:</p>
+      <span class="devicons devicons-nodejs_small"></span>
+  <span class="devicons devicons-html5"></span>
+  <span class="devicons devicons-css3"></span>
+  <span class="devicons devicons-javascript_badge"></span>
+  <span class="devicons devicons-mongodb"></span>
+  <i class="devicon-netlify-plain"></i>
+  <span class="devicons devicons-github_alt"></span>
+    </div>
+    <a class="project-btn" href="https://github.com/funamioh/node-nasa-project" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="nasa-mission-control project-card d-flex py-3 my-3 flex-column flex-sm-column flex-lg-row">
+      <div class="d-flex justify-content-center align-items-center">
+      <img src="./assets/images/nasa-mission-control/nasa-mission-control-home.png" class="prj-img" alt="nasa-img" style="border-radius: 4px;">
+    </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="description my-4">
+      <h2>NASA Mission Control</h2>
+      <p>A web application that manages rocket launches to potential habitable planets. Habitable planets data are scraped from NASA Kepler data. Backend built in Node.js is connected to MongoDB cluster.</p>
+      <hr>
+      <div class="tech-stack-container my-3">
+      <p>Tech Stack:</p>
+      <span class="devicons devicons-nodejs_small"></span>
+  <span class="devicons devicons-html5"></span>
+  <span class="devicons devicons-css3"></span>
+  <span class="devicons devicons-javascript_badge"></span>
+  <span class="devicons devicons-mongodb"></span>
+  <i class="devicon-netlify-plain"></i>
+  <span class="devicons devicons-github_alt"></span>
+    </div>
+    <a class="project-btn" href="https://github.com/funamioh/node-nasa-project" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
+    </div>
+    </div>
+
     </div>
 
 </div>
@@ -130,7 +180,7 @@
 <a class="footer contact-icon" href="https://www.linkedin.com/in/miho-funayama-653b391b4/" target="_blank" re="noopener noreferrer"><i class="fab fa-linkedin"></i></li></a>
 <a class="footer contact-icon" href="https://github.com/funamioh" target="_blank" re="noopener noreferrer"><li><i class="fab fa-github"></i></li></a>
 </div>
-<p class="text-center p-2">© 2024 Miho Funayama</p>
+<p class="text-center p-2">© 2024 Coded with <i class="fa-solid fa-heart"></i> by Miho Funayama</p>
 </div>
   </div>
 </body>
