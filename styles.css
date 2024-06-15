@@ -69,6 +69,30 @@ body {
   border-radius: 8px;
 }
 
+.modal-video-body {
+  max-width: 960px;
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.video-btn {
+  font-size: 15px;
+  border: solid 2px #ff48c5;
+  color: #ff48c5;
+  padding: 0 6px;
+}
+
+.video-btn:hover {
+  transition: 0.3s;
+  background: #ff48c5;
+  color: white;
+}
+
 .project-btn {
   text-decoration: none;
   border: solid 2px #b3e59f;
