@@ -71,8 +71,8 @@ body {
 
 .modal-video-body {
   max-width: 960px;
-  width: 40%;
-  height: 100%;
+  /* width: 40%;
+  height: 100%; */
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
