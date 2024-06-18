@@ -7,8 +7,10 @@
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://unpkg.com/modal-video@latest/css/modal-video.min.css" rel="stylesheet">
   <title>Miho Funayama</title>
   <script src="https://kit.fontawesome.com/c8ce4fa207.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/modal-video@latest/js/modal-video.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg">
@@ -121,6 +123,7 @@
 </div>
 
 <p class="mb-3">Team: 4 developers | My role: Backend Lead</p>
+<button class="js-modal-video video-btn" data-video-url="https://drive.google.com/file/d/180UFURGCSjcp1pONiUtxDIZd7v-B2ATY/view?usp=sharing">Check Video <i class="fa-solid fa-video"></i></button>
   <a class="project-btn" href="https://kanji-cam-miho-2cba8719681c.herokuapp.com/" target="_blank" re="noopener noreferrer">Demo<i class="fas fa-arrow-up-right-from-square project-icon"></i></a>
 <a class="project-btn" href="https://github.com/funamioh/kanji_cam" target="_blank" re="noopener noreferrer">Source Code<i class="fas fa-code project-icon"></i></a>
 </div>
@@ -197,5 +200,12 @@
 </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new ModalVideo('.js-modal-video', { channel: 'custom', url: function(element) {
+          return element.getAttribute('data-video-url');
+        }});
+    });
+  </script>
 </body>
 </html>
